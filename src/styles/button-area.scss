@@ -17,6 +17,10 @@ button {
   font-weight: 500;
   color: white;
   background-color: $main-color;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 
 .devided-by,
