@@ -23,7 +23,7 @@ export default function ButtonArea({ onButtonClick }) {
       <OperatorButton
         operator="x"
         className="times"
-        onClick={() => handleButtonClick("x")}
+        onClick={() => handleButtonClick("*")}
       />
       <NumberButton number="7" onClick={() => handleButtonClick("7")} />
       <NumberButton number="8" onClick={() => handleButtonClick("8")} />

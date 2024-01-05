@@ -9,6 +9,17 @@ export default function App() {
   const handleButtonClick = (value) => {
     if (value === "AC") {
       setDisplayInput("");
+    } else if (value === "=") {
+      try {
+        const result = eval(displayInput);
+        setDisplayInput(result.toString());
+      } catch (error) {
+        setDisplayInput("Error");
+      }
+    } else if (value === ".") {
+      if (!displayInput.includes(".")) {
+        setDisplayInput((prevInput) => prevInput + value);
+      }
     } else {
       setDisplayInput((prevInput) => prevInput + value);
     }
