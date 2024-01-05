@@ -1,9 +1,13 @@
-$font-size-small-title: 1.25rem;
-$font-size-small: 0.75rem;
+$display-color: dimgray;
+$background-color: #dae9f4;
+$main-color: #7f9eb2;
+$second-color: #77919d;
+$alert-color: #274c5e;
 
 body {
   font-family: "Noto Sans TC", sans-serif;
   height: 100%;
+  color: white;
 }
 
 .cursor-pointer {
