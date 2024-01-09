@@ -3,10 +3,13 @@ import Display from "./components/Display";
 import ButtonArea from "./components/Button/ButtonArea";
 import "./styles/app.scss";
 
-export default function App() {
-  const [displayInput, setDisplayInput] = useState("");
+// 聲明component類型
+const App: React.FC = () => {
+  // 確保displayInput為字串
+  const [displayInput, setDisplayInput] = useState<string>("");
 
-  const handleButtonClick = (value) => {
+  // 確保接收的值為字串
+  const handleButtonClick = (value: string): void => {
     switch (value) {
       case ".":
         if (!displayInput.includes(".")) {
@@ -35,4 +38,6 @@ export default function App() {
       <ButtonArea onButtonClick={handleButtonClick} />
     </div>
   );
-}
+};
+
+export default App;
