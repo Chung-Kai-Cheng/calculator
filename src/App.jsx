@@ -7,21 +7,26 @@ export default function App() {
   const [displayInput, setDisplayInput] = useState("");
 
   const handleButtonClick = (value) => {
-    if (value === "AC") {
-      setDisplayInput("");
-    } else if (value === "=") {
-      try {
-        const result = eval(displayInput);
-        setDisplayInput(result.toString());
-      } catch (error) {
-        setDisplayInput("Error");
-      }
-    } else if (value === ".") {
-      if (!displayInput.includes(".")) {
+    switch (value) {
+      case ".":
+        if (!displayInput.includes(".")) {
+          setDisplayInput((prevInput) => prevInput + value);
+        }
+        break;
+      case "=":
+        try {
+          const result = eval(displayInput);
+          setDisplayInput(result.toString());
+        } catch (error) {
+          setDisplayInput("Error");
+        }
+        break;
+      case "AC":
+        setDisplayInput("");
+        break;
+      default:
         setDisplayInput((prevInput) => prevInput + value);
-      }
-    } else {
-      setDisplayInput((prevInput) => prevInput + value);
+        break;
     }
   };
   return (
