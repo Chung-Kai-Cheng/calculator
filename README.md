@@ -5,24 +5,28 @@ capable of addition, subtraction, multiplication and division
 ## How to use
 1.Install Node.js
 ```bash
-Node.js v20.9.0
+nvm install 20
 ```
-2.Clone the repository
+2.Set Node.js version to v20.9.0
 ```bash
-https://github.com/njdhdl1223/Alpha-shop.git
+nvm use 20
 ```
-3.Install npm packages
+3.Clone the repository
+```bash
+git clone https://github.com/Chung-Kai-Cheng/calculator.git
+```
+4.Install npm packages
 ```bash
 npm install
 ```
-4.Install Sass
+5.Install Sass
 ```bash
 npm install -D sass
 ```
-5.Launch the application
+6.Launch the application
 ```bash
 npm run dev
 ```
-5.visit http://localhost:3000
+7.Visit http://localhost:3000
 
-6.``` ctrl + c ```in Terminal to stop running the project.
+8.Press ``` ctrl + c ``` in Terminal to stop running the project.
