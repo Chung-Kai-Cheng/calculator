@@ -30,3 +30,6 @@ npm run dev
 7.Visit http://localhost:3000
 
 8.Press ``` ctrl + c ``` in Terminal to stop running the project.
+
+## Or go directly to the page !  
+https://ubiquitous-tapioca-51a254.netlify.app
