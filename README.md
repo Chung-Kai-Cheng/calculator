@@ -1,35 +1,31 @@
 # Calculator
+https://calculator-chungkai-cheng.netlify.app
+  
 ![calculator](https://github.com/njdhdl1223/calculator/assets/127296290/ad3dbf24-5b25-4dd6-8bab-e29e9b54f2bd)
-## Curent progress
-capable of addition, subtraction, multiplication and division
-## How to use
-1.Install Node.js
-```bash
-nvm install 20
-```
-2.Set Node.js version to v20.9.0
-```bash
-nvm use 20
-```
-3.Clone the repository
-```bash
-git clone https://github.com/Chung-Kai-Cheng/calculator.git
-```
-4.Install npm packages
-```bash
-npm install
-```
-5.Install Sass
-```bash
-npm install -D sass
-```
-6.Launch the application
-```bash
-npm run dev
-```
-7.Visit http://localhost:3000
+# Curent progress
+- capable of addition, subtraction, multiplication and division
+- Deployed on Netlify, enabling CI/CD. 
 
-8.Press ``` ctrl + c ``` in Terminal to stop running the project.
+# Tech Stack
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 
-## Or go directly to the page !  
-https://ubiquitous-tapioca-51a254.netlify.app
+
+- Create React with Vite and Node.js
+- React Hooks
+   - useState
+     - Save and update the current input value and display results
+    
+![Tailwind_CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+- Replace SCSS with Tailwind CSS to improve development efficiency, readability, and style consistency
+
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+
+- Replace the component that receives input from jsx to tsx to ensure that the input meets expectations.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5a4e777-3c44-448c-9b68-b71c1a817e44/deploy-status)](https://app.netlify.com/sites/calculator-chungkai-cheng/deploys)
+
+- Deploy project with Netlify to implement CI/CD
+
