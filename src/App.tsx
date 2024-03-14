@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Display from "./components/Display";
 import ButtonArea from "./components/Button/ButtonArea";
-import "./styles/app.scss";
 
 // 聲明component類型
 const App: React.FC = () => {
@@ -33,7 +32,7 @@ const App: React.FC = () => {
     }
   };
   return (
-    <div className="main-container">
+    <div className=" main-container flex flex-col p-2.5 my-0 mx-auto h-120 w-80 rounded-xl bg-background-color">
       <Display input={displayInput} />
       <ButtonArea onButtonClick={handleButtonClick} />
     </div>

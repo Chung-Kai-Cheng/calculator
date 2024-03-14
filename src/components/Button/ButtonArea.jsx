@@ -1,28 +1,26 @@
 import React from "react";
 import OperatorButton from "./OperatorButton";
 import NumberButton from "./NumberButton";
-import "../../styles/button-area.scss";
 
 export default function ButtonArea({ onButtonClick }) {
   const handleButtonClick = (value) => {
     onButtonClick(value);
   };
-
   return (
-    <div className="button-container">
+    <div className="button-container grid w-full h-4/5 grid-cols-4 grid-rows-5 gap-1">
       <OperatorButton
         operator="AC"
-        className="all-clean"
+        className="all-clean col-span-2 bg-alert-color"
         onClick={() => handleButtonClick("AC")}
       />
       <OperatorButton
         operator="/"
-        className="devided-by"
+        className="devided-by  bg-second-color"
         onClick={() => handleButtonClick("/")}
       />
       <OperatorButton
         operator="x"
-        className="times"
+        className="times  bg-second-color"
         onClick={() => handleButtonClick("*")}
       />
       <NumberButton number="7" onClick={() => handleButtonClick("7")} />
@@ -30,7 +28,7 @@ export default function ButtonArea({ onButtonClick }) {
       <NumberButton number="9" onClick={() => handleButtonClick("9")} />
       <OperatorButton
         operator="-"
-        className="minus"
+        className="minus  bg-second-color"
         onClick={() => handleButtonClick("-")}
       />
       <NumberButton number="4" onClick={() => handleButtonClick("4")} />
@@ -38,7 +36,7 @@ export default function ButtonArea({ onButtonClick }) {
       <NumberButton number="6" onClick={() => handleButtonClick("6")} />
       <OperatorButton
         operator="+"
-        className="plus"
+        className="plus  bg-second-color"
         onClick={() => handleButtonClick("+")}
       />
       <NumberButton number="1" onClick={() => handleButtonClick("1")} />
@@ -46,10 +44,14 @@ export default function ButtonArea({ onButtonClick }) {
       <NumberButton number="3" onClick={() => handleButtonClick("3")} />
       <OperatorButton
         operator="="
-        className="equals"
+        className="equals row-span-2 bg-alert-color"
         onClick={() => handleButtonClick("=")}
       />
-      <NumberButton number="0" onClick={() => handleButtonClick("0")} />
+      <NumberButton
+        number="0"
+        className="col-span-2"
+        onClick={() => handleButtonClick("0")}
+      />
       <NumberButton number="." onClick={() => handleButtonClick(".")} />
     </div>
   );
